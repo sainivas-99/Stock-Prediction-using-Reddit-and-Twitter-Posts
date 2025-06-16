@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 from datetime import date
+import datetime
 import os
 
 def fetch_btc_price_today():
@@ -8,7 +9,7 @@ def fetch_btc_price_today():
     params = {'ids': 'bitcoin', 'vs_currencies': 'usd'}
     response = requests.get(url, params=params)
     price = response.json()['bitcoin']['usd']
-    today = date.today()
+    today = datetime.date.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S')
     new_data = pd.DataFrame([{"date": today, "price": price}])
 
     master_file = "data/historical/btc_prices.csv"
