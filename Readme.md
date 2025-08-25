@@ -106,7 +106,7 @@ The goal of this project is to build a **real-time, automated pipeline** that:
 
 ---
 
-## 🔍 Current Results (So Far)
+## Current Results (So Far)
 
 - Granger causality confirmed **Sentiment ➝ Bitcoin returns** is statistically significant.  
 - VAR model successfully generates rolling forecasts.  
@@ -124,7 +124,7 @@ Sample Prophet Forecast:
 
 ---
 
-## ☁️ AWS Cloud Automation
+## AWS Cloud Automation
 
 To ensure a **fully serverless and scalable pipeline**, I implemented AWS-based orchestration:
 
