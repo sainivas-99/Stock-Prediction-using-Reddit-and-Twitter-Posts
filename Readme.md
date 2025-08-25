@@ -25,7 +25,7 @@ The goal of this project is to build a **real-time, automated pipeline** that:
     ┌───────────────────────────────────┐
     │    Airflow ETL Pipeline (Docker)  │
     │  - Collect daily posts & prices   │
-    │  - Sentiment scoring (VADER/finBERT) │
+    │  - Sentiment scoring (VADER)      │
     │  - Store in PostgreSQL / S3       │
     └───────────────────────────────────┘
                       │
@@ -65,8 +65,7 @@ The goal of this project is to build a **real-time, automated pipeline** that:
 ### 2. **Sentiment Analysis**
 - Preprocessing: cleaning, tokenization.  
 - Models:
-  - **VADER** (baseline for finance text).  
-  - Optionally: **finBERT** for richer embeddings.  
+  - **VADER** (baseline for finance text).   
 - Aggregate into **daily average sentiment scores**.
 
 ### 3. **Feature Engineering**
